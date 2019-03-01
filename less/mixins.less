@@ -1,8 +1,4 @@
 // Mixins Here
-&:hover {
-    color: @background;
-    background: @color;
- }
 
  .custom-btn(@width, @height, @background, @color) {
     width: @width;
@@ -14,10 +10,18 @@
     border: 1px solid black;
     .center;
     cursor: pointer; 
+    &:hover {
+        color: @background;
+        background: @color;
+     }
  }
 
  .center() {
     display: flex;
     justify-content: center;
     align-items: center;
+ }
+
+ .testing {
+     border: 1px red;
  }
